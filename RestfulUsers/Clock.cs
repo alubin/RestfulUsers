@@ -8,17 +8,6 @@ namespace RestfulUsers
 	{
 		public Clock()
 		{
-			//Content = new StackLayout
-			//{
-			//	VerticalOptions = LayoutOptions.Center,
-			//	Children = {
-			//			new Label {
-			//				HorizontalTextAlignment = TextAlignment.Center,
-			//				Text = "Welcome to Xamarin Forms!"
-			//			}
-			//		}
-			//};
-
 			// Accomodate iPhone status bar.
 			this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
 

@@ -14,6 +14,12 @@ namespace RestfulUsers
 			// Accomodate iPhone status bar.
 			this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
 
+			Label title = new Label
+			{
+				Text = "Login",
+				FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+				HorizontalOptions = LayoutOptions.CenterAndExpand
+			};
 			Label email = new Label
 			{
 				Text = "Enter Email:",
@@ -45,6 +51,8 @@ namespace RestfulUsers
 				HorizontalOptions = LayoutOptions.End
 			};
 
+			submitBtn.Clicked += onRegisterSubmit;
+
 			Button registerBtn = new Button
 			{
 				Text = "Register",
@@ -56,6 +64,7 @@ namespace RestfulUsers
 			Content = new StackLayout
 			{
 				Children = {
+					title,
 					email,
 					inputEmail,
 					password,
@@ -70,6 +79,10 @@ namespace RestfulUsers
 		{
 			Navigation.PushAsync(new Register());
 			//Navigation.PushModalAsync(new Login());
+		}
+
+		void onRegisterSubmit(object sender, EventArgs e)
+		{
 		}
 	}
 }

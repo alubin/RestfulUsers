@@ -38,6 +38,7 @@
     <Compile Include="Login.cs" />
     <Compile Include="LoginModel.cs" />
     <Compile Include="RegisterModel.cs" />
+    <Compile Include="RestfulWorker.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

@@ -15,6 +15,13 @@ namespace RestfulUsers
 			// Accomodate iPhone status bar.
 			this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
 
+			Label title = new Label
+			{
+				Text = "Register",
+				FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+				HorizontalOptions = LayoutOptions.CenterAndExpand
+			};
+
 			Label name = new Label
 			{
 				Text = "Enter Name:",
@@ -70,6 +77,7 @@ namespace RestfulUsers
 			Content = new StackLayout
 			{
 				Children = {
+					title,
 					name,
 					inputName,
 					email,

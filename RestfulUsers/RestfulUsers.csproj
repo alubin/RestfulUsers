@@ -36,6 +36,8 @@
     <Compile Include="SimpleTestKeyPadPage.cs" />
     <Compile Include="Register.cs" />
     <Compile Include="Login.cs" />
+    <Compile Include="LoginModel.cs" />
+    <Compile Include="RegisterModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

@@ -4,6 +4,9 @@ using Xamarin.Forms;
 
 namespace RestfulUsers
 {
+	/**
+	 * This view class is responsible for displaying the elements needed for a user to register in the mobile application.
+	 **/
 	public class Register : ContentPage
 	{
 		public Register()
@@ -24,16 +27,17 @@ namespace RestfulUsers
 				Placeholder = "Enter Name"
 			};
 
-			Label userName = new Label
+			Label email = new Label
 			{
-				Text = "Enter User Name:",
+				Text = "Enter Email:",
 				FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
 				HorizontalOptions = LayoutOptions.Start
 			};
 
-			Entry inputUserName = new Entry
+			Entry inputEmail = new Entry
 			{
-				Placeholder = "Enter User Name"
+				Placeholder = "Enter Email",
+				Keyboard=Keyboard.Email
 			};
 
 			Label password = new Label
@@ -68,8 +72,8 @@ namespace RestfulUsers
 				Children = {
 					name,
 					inputName,
-					userName,
-					inputUserName,
+					email,
+					inputEmail,
 					password,
 					inputPassword,
 					submitBtn,
